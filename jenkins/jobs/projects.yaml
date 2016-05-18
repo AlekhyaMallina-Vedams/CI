@@ -1,6 +1,6 @@
 - project:
-    name: ci-sandbox
-    github-org: openstack-dev
+    name: cinder
+    github-org: openstack
     node: master
     vendor: myvendor
 
