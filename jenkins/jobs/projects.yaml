@@ -2,7 +2,7 @@
     name: cinder
     github-org: openstack
     node: master
-    vendor: myvendor
+    vendor: lvmdriver-1
 
     jobs:
         - noop-check-communication
