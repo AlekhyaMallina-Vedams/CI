@@ -25,7 +25,7 @@
 
     builders:
       - net-info
-#      - devstack-checkout
+      - devstack-checkout
       - devstack-checkout-http
       - shell: |
           #!/bin/bash -xe
