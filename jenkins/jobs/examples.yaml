@@ -126,3 +126,27 @@
     publishers:
       - devstack-logs
       - console-log
+- job-template:
+    name: 'kaminario-dsvm-test'
+    node: '{node}'
+
+    wrappers:
+      - timeout:
+          timeout: 300
+          fail: true
+      - timestamps
+
+    builders:
+      - link-logs
+      - net-info
+      - shell: |
+          #!/bin/bash -xe
+          echo "created a folder"
+          sudo mkdir /opt/stack
+          echo "created a folder"
+          sudo mkdir /opt/stack/logs
+
+          sleep 30
+    publishers:
+      - console-log
+
