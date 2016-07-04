@@ -1,11 +1,13 @@
 - project:
-    name: cinder
-    github-org: openstack
+    name: ci-sandbox
+    github-org: openstack-dev
     node: master
     vendor: Kaminario
 
     jobs:
         
         - kaminario-dsvm-tempest-full-FC:
+            node: 'devstack_slave || devstack-precise-check || d-p-c'
+        - kaminario-dsvm-test:
             node: 'devstack_slave || devstack-precise-check || d-p-c'
         
