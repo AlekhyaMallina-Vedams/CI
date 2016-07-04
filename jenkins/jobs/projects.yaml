@@ -2,7 +2,7 @@
     name: cinder
     github-org: openstack
     node: master
-    vendor: lvmdriver-1
+    vendor: Kaminario
 
     jobs:
         
