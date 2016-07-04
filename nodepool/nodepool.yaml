@@ -48,14 +48,14 @@ providers:
   - name: local_01
 #TODO: Update the provider username, password, and authurl
     username: 'admin'
-    password: 'Vedams@123'
-    auth-url: 'http://172.16.2.237:5000/v2.0'
+    password: 'nomoresecret'
+    auth-url: 'http://192.168.6.7:5000/v2.0'
     project-name: 'admin'
     boot-timeout: 1200
     max-servers: 1
     images:
       - name: dpc
-        min-ram: 8192
+        min-ram: 16384
         diskimage: dpc
         username: jenkins
         private-key: '/home/nodepool/.ssh/id_rsa'
@@ -67,6 +67,6 @@ targets:
 #TODO: If you are using a different user in vars.sh JENKINS_API_USER, update it here.
       user: 'jenkins'
 #TODO: If you are using secured jenkins, update this to vars.sh JENKINS_API_KEY.
-      apikey: 'cc6520a141fc034283bfb1fa02fec86b'
+      apikey: '9b2aaf3043472ac60c770d62a872e96b'
 #TODO: If you changed JENKINS_CREDENTIALS_ID in vars.sh, update it here too:
-      credentials-id: '6d59a6f8-27e8-4e9d-b6e1-db806a3a213b'
+      credentials-id: 'f4fe5b04-7c0e-44f5-9db5-d36de91f4baa'
