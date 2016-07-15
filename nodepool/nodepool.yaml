@@ -18,7 +18,7 @@ cron:
   image-update: '0 0 * * *'
 
 zmq-publishers:
-  - tcp://localhost:8888
+  - tcp://192.168.6.8:8888
 
 gearman-servers:
   - host: 127.0.0.1
@@ -63,7 +63,7 @@ providers:
 targets:
   - name: jenkins1
     jenkins:
-      url: 'http://localhost:8080/'
+      url: 'http://192.168.6.8:8080/'
 #TODO: If you are using a different user in vars.sh JENKINS_API_USER, update it here.
       user: 'jenkins'
 #TODO: If you are using secured jenkins, update this to vars.sh JENKINS_API_KEY.
